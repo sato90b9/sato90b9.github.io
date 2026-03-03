@@ -1,11 +1,549 @@
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1.6;
-    }
-    h1 {
-      color: #333;
-    }
-    section {
-      margin-bottom: 40px;
-    }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+main{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.all_block {
+  position: relative;
+  padding: 5% 10% 10%;
+}
+
+/*トップへ戻る*/
+#page_top {
+  width: 90px;
+  height: 90px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  margin: 5px;
+  background: #000;
+  opacity: 0.8;
+  border-radius: 50%;
+  z-index: 500;
+}
+
+#page_top a {
+  position: relative;
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+#page_top a::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f102';
+  font-size: 25px;
+  color: #fff;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -40px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+
+#page_top a::after {
+  content: 'PAGE TOP';
+  font-size: 13px;
+  color: #fff;
+  position: absolute;
+  top: 45px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+}
+.logo{
+  cursor: pointer;
+}
+
+.logo img{
+   width: 250px;
+   padding: 20px;
+   position: relative;
+   top: 0;
+   left: 0;
+}
+.setting{
+  position: relative;
+  left: 90%;
+  max-width: 10%;
+}
+.logout{
+  width: 100px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 3px 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+.logout a{
+  color: #0c3702;
+}
+.logouticon{
+  margin: 0 5px;
+}
+.account{
+  border: 2px solid #0c3702;
+  border-radius: 5px;
+  background: #0c3702;
+  max-width: 150px;
+  width: auto;
+  padding: 3px 10px;
+}
+.account:hover{
+  border: 2px solid #d5d5d5;
+  background: #962d2d;
+}
+.account a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.usericon{
+  margin: 0 5px;
+}
+.menu_box {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  margin: 10px;
+  align-items: center;
+}
+
+.menu_box li:first-child {
+  width: 100px;
+}
+
+.menu_box li:not(:first-child) {
+  padding: 3px 10px;
+  border: solid 1px #000;
+  border-radius: 5px;
+  background: #000;
+  cursor: pointer;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+}
+.menu_box li:not(:first-child):hover {
+  border: solid 1px #ffffff;
+  background: #525151;
+}
+
+#menu .capacity {
+  color: #fff;
+}
+
+#menu .tube_name {
+  color: orange;
+}
+#menu .box_name {
+  color: rgb(229, 226, 143);
+}
+
+#menu .EX {
+  color: rgb(27, 162, 208);
+}
+
+#menu .IN {
+  color: rgb(221, 65, 190);
+}
+#menu .all{
+  background: #a80505;
+  color: #fff;
+  font-weight: bold;
+  border: 1px solid #fff;
+  padding: 3px 20px;
+}
+.search{
+  padding: 2px 3px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.3);
+  width: 65%;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(147deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 74%);
+}
+.search_box{
+  border: 10px double rgba(255, 255, 255);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 65%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 5px;
+}
+.patern {
+  text-align: right;
+  width: 100px;
+  font-weight: bold;
+  color: #333;
+}
+
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#table_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
+}
+
+.page_title {
+  text-align: center;
+  padding: 50px 0;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.2);
+
+}
+
+table {
+  position: relative;
+  border: 1px solid #000;
+  border-collapse: collapse;
+}
+caption{
+  text-align: left;
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding: 5px;
+  text-shadow: 2px 2px #ccc;
+}
+
+th,td{
+  border: 1px solid #000;
+  padding: 5px 10px;
+}
+
+th {
+  background: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+td {
+  height: 250px;
+  width: 500px;
+}
+td.freezebox{
+  background: rgba(24, 85, 2, 0.1);
+  max-width: 300px;
+}
+.product_name {
+  font-size: 1.5rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.photo img {
+  margin: 0 auto;
+}
+
+.select_data::after{
+  content: '\f0a7';
+  font-family: Font Awesome\ 5 Free;
+  padding: 5px;
+}
+.model {
+  padding: 0;
+}
+
+img {
+  height: 100%;
+  width: auto;
+}
+
+td.EX{
+  background:rgba(184, 221, 251, 0.2);
+}
+td.IN{
+  background:rgba(224, 198, 234, 0.2);
+}
+
+.txtEX{
+  font-style: italic;
+  text-align: center;
+  color: rgba(26, 80, 187, 0.5);
+}
+.txtIN{
+  font-style: italic;
+  text-align: center;
+  color: rgba(160, 100, 174, 0.5);
+}
+.txtBOX{
+  font-style: italic;
+  text-align: center;
+  color: rgba(44, 108, 52, 0.5);
+}
+.photo{
+  width: 300px;
+}
+.scale {
+  display: flex;
+  padding: 0;
+  flex-wrap: nowrap;
+  height: 250px;
+  margin: 0 auto;
+}
+.memori{
+  text-align: right;
+}
+.volume{
+  text-align: center;
+}
+.spetification{
+  text-align: center;
+}
+
+model-viewer{
+  width: 500px;
+  height: 250px;
+}
+
+
+.fullscreen-button:has(#big) {
+  color: #000;
+  padding: 10px;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.fullscreen-button:has(#close) {
+  color: #000;
+  padding: 5px;
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fullscreen-button {
+  margin: 10px;
+}
+
+.big_zoom {
+  padding: 5px;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.parts {
+  width: 250px;
+}
+
+.slider {
+  width: 200px;
+  margin: 0 auto;
+}
+.patern_name{
+  text-align: center;
+  padding: 3px
+}
+.slider_photo{
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 250px;
+  width: 200px;
+}
+
+.slider li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.thumnail_item{
+  cursor: pointer;
+  height: auto;
+  width: 100%;
+}
+
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev,
+.slick-next {
+  position: absolute;
+  /*絶対配置にする*/
+  bottom: 0;
+  cursor: pointer;
+  /*マウスカーソルを指マークに*/
+  outline: none;
+  /*クリックをしたら出てくる枠線を消す*/
+  border-top: 2px solid #666;
+  /*矢印の色*/
+  border-right: 2px solid #666;
+  /*矢印の色*/
+  height: 15px;
+  width: 15px;
+}
+
+.slick-prev {
+  /*戻る矢印の位置と形状*/
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+.slick-next {
+  /*次へ矢印の位置と形状*/
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+  text-align: center;
+  margin: 20px 0 0 0;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width: 8px;
+  /*ドットボタンのサイズ*/
+  height: 8px;
+  /*ドットボタンのサイズ*/
+  display: block;
+  border-radius: 50%;
+  background: #ccc;
+  /*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button {
+  background: #333;
+  /*ドットボタンの現在地表示の色*/
+}
+
+/* photo zoom */
+
+#zoom5 {
+  display: none;
+}
+
+.zoomback {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  top: 0;
+  left: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+#zoom5_outline {
+  position: relative;
+  width: auto;
+  height: 40%;
+}
+
+#zoom5_btn {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#zoom5_btn::before {
+  content: '\f057';
+  font-family: Font Awesome\ 5 Free;
+}
+
+#zoom5_btn:hover {
+  color: #6ba3f7;
+}
+
+.zoomimg_box {
+  width: 100%;
+  height: 100%;
+}
+
+#zoomimg5 {
+  width: auto;
+  height: 100%;
+}
+
+/*プルダウンメニュー*/
+
+#pull_model {
+  cursor: pointer;
+  padding: 0 20px;
+  text-align: center;
+  border: solid 2px #ccc;
+  text-align: center;
+
+}
+
+#focus_box {
+  cursor: pointer;
+}
+
+#model_data {
+  display: none;
+}
+@media screen and(min-width: 767px){
+  .product_name{
+    font-size: 1.1rem;
+  }
+  img{
+    height: 75%;
+  }
+  th, td{
+    padding: 0;
+  }
+  td{
+    width: 300px;
+  }
+  model-viewer{
+    width: 0;
+    height: 250px;
+
+  }
+}
+@media screen and(min-width: 1200px){
+  .search_box{
+    width: 100%;
+  }
+}
