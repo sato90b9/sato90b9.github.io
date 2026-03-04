@@ -1,4 +1,3 @@
-<?php session_start(); // ページの先頭でセッションを開始 ?>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -115,25 +114,19 @@
                                     <li>
                                         <p class="patern_name">parts1</p>
                                         <div class="slider_photo">
-                                            <img src="image/sample01/parts1.png" class="thumnail_item">
+                                            <img src="image/slider/sample01.png" class="thumnail_item">
                                         </div>
                                     </li>
                                     <li>
                                         <p class="patern_name">parts2</p>
                                         <div class="slider_photo">
-                                            <img src="image/sample01/parts2.png" class="thumnail_item">
+                                            <img src="image/slider/sample01_bottom.png" class="thumnail_item">
                                         </div>
                                     </li>
                                     <li>
                                         <p class="patern_name">parts3</p>
                                         <div class="slider_photo">
-                                            <img src="image/sample01/parts3.png" class="thumnail_item">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="patern_name">parts4</p>
-                                        <div class="slider_photo">
-                                            <img src="image/sample01/parts4.png" class="thumnail_item">
+                                            <img src="image/slider/rack01.png" class="thumnail_item">
                                         </div>
                                     </li>
                                 </ul>
@@ -144,20 +137,16 @@
                                     <select id="pull_model" name="sample01" onchange="selectChange(this)">
 
                                         <option value="all"> <i class="fas fa-angle-down down"></i>all</option>
-                                        <option value="tube_cap">Tube&Cap</option>
                                         <option value="tube">Tube</option>
-                                        <option value="cap">Cap</option>
-                                        <option value="rack">Rack</option>
-                                        <option value="cover">Rack Cover</option>
                                     </select>
                                 </div>
                                 <div class="active_data">
 
                                     <div class="all">
                                         <model-viewer class="reveal" loading="auto" camera-controls auto-rotate
-                                            poster="" src="CAD_data/sample01.gltf" ios-src="" ar
+                                            poster="" src="image/CAD_data/sample01.gltf" ios-src="" ar
                                             shadow-intensity=0.5 shadow-softness=1.0 exposure="1" camera-target=""
-                                            camera-orbit="" skybox-image="skybox/img1.jpg" alt="JT-10.0-EX">
+                                            camera-orbit="" skybox-image="image/skycolor.png" alt="sample01">
                                             <button onclick="toggleFullscreen(this)" class="fullscreen-button">
                                                 <i class="fas fa-expand-arrows-alt" id="big"></i>
                                             </button>
@@ -168,7 +157,7 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="Specification/image/sample01/spetification.png" target="_blank"
+                                <a href="Specification/image/spetification/sample01.png" target="_blank"
                                     class="spetification">
                                     <p>Specification</p>
                                 </a>
@@ -183,40 +172,34 @@
                             </td>
                             <td class="photo">
                                 <div class="scale">
-                                    <img src="image/sample02/sample02.png">
+                                    <img src="image/slider/sample02.png">
                                     <p><img src="image/scale.png" class="memori"></p>
                                 </div>
                             </td>
                             <td>
                                 <div class="volume">
                                     <p>Working Volume</p>
-                                    <p>3.8ml</p>
+                                    <p>4.0ml</p>
                                 </div>
                             </td>
                             <td class="parts">
                                 <ul class="slider">
                                     <li>
-                                        <p class="patern_name">Tube</p>
+                                        <p class="patern_name">Parts1</p>
                                         <div class="slider_photo">
-                                            <img src="image/sample02/parts01.png" class="thumnail_item">
+                                            <img src="image/slider/sample02.png" class="thumnail_item">
                                         </div>
                                     </li>
                                     <li>
-                                        <p class="patern_name">Cap</p>
+                                        <p class="patern_name">Parts2</p>
                                         <div class="slider_photo">
-                                            <img src="image/sample02/parts02.png" class="thumnail_item">
+                                            <img src="image/slider/sample02_bottompng" class="thumnail_item">
                                         </div>
                                     </li>
                                     <li>
-                                        <p class="patern_name">Rack</p>
+                                        <p class="patern_name">Parts3</p>
                                         <div class="slider_photo">
-                                            <img src="image/sample02/parts03.png" class="thumnail_item">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="patern_name">Rack Cover</p>
-                                        <div class="slider_photo">
-                                            <img src="image/sample02/parts04.png" class="thumnail_item">
+                                            <img src="image/slider/rack02.png" class="thumnail_item">
                                         </div>
                                     </li>
                                 </ul>
@@ -227,20 +210,16 @@
                                     <select id="pull_model" name="sample02" onchange="selectChange(this)">
 
                                         <option value="all"> <i class="fas fa-angle-down down"></i>all</option>
-                                        <option value="tube_cap">Tube&Cap</option>
                                         <option value="tube">Tube</option>
-                                        <option value="cap">Cap</option>
-                                        <option value="rack">Rack</option>
-                                        <option value="cover">Rack Cover</option>
                                     </select>
                                 </div>
                                 <div class="active_data">
 
                                     <div class="all">
                                         <model-viewer class="reveal" loading="auto" camera-controls auto-rotate
-                                            poster="" src="CAD_data/sample02/sample02.gltf" ios-src=""
+                                            poster="" src="image/CAD_data/sample02.gltf" ios-src=""
                                             ar shadow-intensity=0.5 shadow-softness=1.0 exposure="1" camera-target=""
-                                            camera-orbit="" skybox-image="skybox/img1.jpg" alt="sample02">
+                                            camera-orbit="" skybox-image="image/skycolor.png" alt="sample02">
                                             <button onclick="toggleFullscreen(this)" class="fullscreen-button">
                                                 <i class="fas fa-expand-arrows-alt" id="big"></i>
                                             </button>
@@ -251,7 +230,7 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="images/sample02/spetification.png" target="_blank"
+                                <a href="image/spetification/sample02.png" target="_blank"
                                     class="spetification">
                                     <p>Specification</p>
                                 </a>
@@ -266,7 +245,7 @@
                             </td>
                             <td class="photo">
                                 <div class="scale">
-                                    <img src="image/sample03/sample03.png">
+                                    <img src="image/slider/sample03.png">
                                     <p><img src="image/scale.png" class="memori"></p>
                                 </div>
                             </td>
@@ -282,27 +261,21 @@
                                     <li>
                                         <p class="patern_name">Parts1</p>
                                         <div class="slider_photo">
-                                            <img src="image/sample03/parts1.png"
+                                            <img src="image/sample03.png"
                                                 class="thumnail_item">
                                         </div>
                                     </li>
                                     <li>
                                         <p class="patern_name">Parts2</p>
                                         <div class="slider_photo">
-                                            <img src="image/sample03/parts2.png" class="thumnail_item">
+                                            <img src="image/sample03_bottom.png" class="thumnail_item">
                                         </div>
                                     </li>
                                     <li>
                                         <p class="patern_name">Parts3</p>
                                         <div class="slider_photo">
-                                            <img src="image/sample03/parts3.png"
+                                            <img src="image/rack01.png"
                                                 class="thumnail_item">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="patern_name">Parts4</p>
-                                        <div class="slider_photo">
-                                            <img src="image/sample03/parts4.png" class="thumnail_item">
                                         </div>
                                     </li>
                                 </ul>
@@ -313,17 +286,15 @@
                                     <select id="pull_model" name="sample03" onchange="selectChange(this)">
 
                                         <option value="all"> <i class="fas fa-angle-down down"></i>all</option>
-                                        <option value="tube_cap">Tube&Cap</option>
                                         <option value="tube">Tube</option>
                                     </select>
                                 </div>
                                 <div class="active_data">
-
                                     <div class="all">
                                         <model-viewer class="reveal" loading="auto" camera-controls auto-rotate
-                                            poster="" src="CAD_data/sample03/sample03.gltf" ios-src=""
+                                            poster="" src="image/CAD_data/sample03.gltf" ios-src=""
                                             ar shadow-intensity=0.5 shadow-softness=1.0 exposure="1" camera-target=""
-                                            camera-orbit="" skybox-image="skybox/img1.jpg" alt="JT-CRYO2.0F-EX">
+                                            camera-orbit="" skybox-image="image/skycolor.png" alt="sample03">
                                             <button onclick="toggleFullscreen(this)" class="fullscreen-button">
                                                 <i class="fas fa-expand-arrows-alt" id="big"></i>
                                             </button>
@@ -334,7 +305,7 @@
                                 </div>
                             </td>
                             <td>
-                                <a href="image/sample03/spetification.png" target="_blank"
+                                <a href="image/spetification/sample03.png" target="_blank"
                                     class="spetification">
                                     <p>Specification</p>
                                 </a>
@@ -348,9 +319,9 @@
                 <div id="sample01">
                     <div class="all">
                         <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="CAD_data/sample01/sample01.gltf" ios-src="" ar shadow-intensity=0.5
+                            src="image/CAD_data/sample01.gltf" ios-src="" ar shadow-intensity=0.5
                             shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="skybox/img1.jpg" alt="">
+                            skybox-image="image/skycolor.png" alt="sample01">
                             <div class="model_btns">
                                 <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
                                     <i class="fas fa-expand-arrows-alt" id="big"></i>
@@ -358,23 +329,11 @@
                             </div>
                         </model-viewer>
                     </div>
-                    <div class="parts1">
+                    <div class="tube">
                         <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="CAD_data/sample01/parts1.gltf" ios-src="" ar shadow-intensity=0.5
+                            src="image/CAD_data/sample01_tube.gltf" ios-src="" ar shadow-intensity=0.5
                             shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="skybox/img1.jpg" alt="">
-                            <div class="model_btns">
-                                <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
-                                    <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                </button>
-                            </div>
-                        </model-viewer>
-                    </div>
-                    <div class="parts2">
-                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="CAD_data/sample01/parts2.gltf" ios-src="" ar shadow-intensity=0.5
-                            shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="skybox/img1.jpg" alt="">
+                            skybox-image="image/skycolor.png" alt="sample01">
                             <div class="model_btns">
                                 <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
                                     <i class="fas fa-expand-arrows-alt" id="big"></i>
@@ -389,21 +348,9 @@
                 <div id="sample02">
                     <div class="all">
                         <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="CAD_data/sample02/sample02.gltf" ios-src="" ar shadow-intensity=0.5
+                            src="image/CAD_data/sample02.gltf" ios-src="" ar shadow-intensity=0.5
                             shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="skybox/img1.jpg" alt="">
-                            <div class="model_btns">
-                                <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
-                                    <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                </button>
-                            </div>
-                        </model-viewer>
-                    </div>
-                    <div class="tube_cap">
-                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="CAD_data/sample02/parts1.gltf" ios-src="" ar
-                            shadow-intensity=0.5 shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="skybox/img1.jpg" alt="">
+                            skybox-image="image/skycolor.png" alt="sample02">
                             <div class="model_btns">
                                 <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
                                     <i class="fas fa-expand-arrows-alt" id="big"></i>
@@ -413,9 +360,9 @@
                     </div>
                     <div class="tube">
                         <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="CAD_data/sample02/parts2.gltf" ios-src="" ar shadow-intensity=0.5
+                            src="image/CAD_data/sample02_tube.gltf" ios-src="" ar shadow-intensity=0.5
                             shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="skybox/img1.jpg" alt="">
+                            skybox-image="image/skycolor.png" alt="sample02">
                             <div class="model_btns">
                                 <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
                                     <i class="fas fa-expand-arrows-alt" id="big"></i>
@@ -430,9 +377,9 @@
                 <div id="JT_CRYO2.0F_EX">
                     <div class="all">
                         <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="CAD_data/sample03/sample03.gltf" ios-src="" ar shadow-intensity=0.5
+                            src="image/CAD_data/sample03.gltf" ios-src="" ar shadow-intensity=0.5
                             shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="skybox/img1.jpg" alt="">
+                            skybox-image="image/skycolor.png" alt="sample03">
                             <div class="model_btns">
                                 <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
                                     <i class="fas fa-expand-arrows-alt" id="big"></i>
@@ -440,11 +387,11 @@
                             </div>
                         </model-viewer>
                     </div>
-                    <div class="parts1">
+                    <div class="tube">
                         <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="CAD_data/sample03/parts2.gltf" ios-src="" ar
+                            src="image/CAD_data/sample03_tube.gltf" ios-src="" ar
                             shadow-intensity=0.5 shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="skybox/img1.jpg" alt="JT-CRYO2.0F-EX">
+                            skybox-image="image/skycolor.png" alt="sample03">
                             <div class="model_btns">
                                 <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
                                     <i class="fas fa-expand-arrows-alt" id="big"></i>
@@ -461,7 +408,7 @@
             <div id="zoom5_outline">
                 <button id="zoom5_btn">閉じる</button>
                 <p class="zoomimg_box">
-                    <img src="image/sample01/parts1.png" id="zoomimg5">
+                    <img src="image/slider/sample01.png" id="zoomimg5">
                 </p>
             </div>
 
