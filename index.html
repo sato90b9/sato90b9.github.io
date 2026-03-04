@@ -18,455 +18,450 @@
 </head>
 
 <body>
-
-    <main>
-        <div class="all_block">
-
-            <div id="table_box">
-                <div class="table_data">
-
-                    <h1 id="page_title">PRODUCT LIST</h1>
-                    <nav>
-                        <div id="menu">
-                            <p class="search"><i class="fas fa-search"></i>Search</p>
-                            <div class="search_box">
+    <div class="all_block">
+        <div id="table_box">
+            <div class="table_data">
+                <h1 id="page_title">PRODUCT LIST</h1>
+                <nav>
+                    <div id="menu">
+                        <p class="search"><i class="fas fa-search"></i>Search</p>
+                        <div class="search_box">
+                            <ul class="menu_box capacity">
+                                <li>
+                                    <p class="patern"></p>
+                                </li>
+                                <li class="all" onclick="clickFilter(this)" value="all">All</li>
+                            </ul>
+                            <ul>
                                 <ul class="menu_box capacity">
                                     <li>
-                                        <p class="patern"></p>
+                                        <p class="patern">capacity▶</p>
                                     </li>
-                                    <li class="all" onclick="clickFilter(this)" value="all">All</li>
+                                    <li onclick="clickFilter(this)" value="100">10.0ml</li>
+                                    <li onclick="clickFilter(this)" value="40">4.0ml</li>
+                                    <li onclick="clickFilter(this)" value="20">2.0ml</li>
                                 </ul>
-                                <ul>
-                                    <ul class="menu_box capacity">
-                                        <li>
-                                            <p class="patern">capacity▶</p>
-                                        </li>
-                                        <li onclick="clickFilter(this)" value="100">10.0ml</li>
-                                        <li onclick="clickFilter(this)" value="40">4.0ml</li>
-                                        <li onclick="clickFilter(this)" value="20">2.0ml</li>
-                                    </ul>
-                                    <ul class="menu_box tube_name">
-                                        <li>
-                                            <p class="patern">TUBE▶
-                                        </li>
-                                        <li onclick="clickFilter(this)" value="BT">BT</li>
-                                        <li onclick="clickFilter(this)" value="JT">JT</li>
-                                        <li onclick="clickFilter(this)" value="TU">TU</li>
-                                    </ul>
-                                    <ul class="menu_box box_name">
-                                        <li>
-                                            <p class="patern">BOX▶
-                                        </li>
-                                        <li onclick="clickFilter(this)" value="ty96">96 type</li>
-                                        <li onclick="clickFilter(this)" value="ty48">48 type</li>
-                                        <li onclick="clickFilter(this)" value="ty24">24 type</li>
-                                    </ul>
+                                <ul class="menu_box tube_name">
+                                    <li>
+                                        <p class="patern">TUBE▶
+                                    </li>
+                                    <li onclick="clickFilter(this)" value="BT">BT</li>
+                                    <li onclick="clickFilter(this)" value="JT">JT</li>
+                                    <li onclick="clickFilter(this)" value="TU">TU</li>
                                 </ul>
-                            </div>
+                                <ul class="menu_box box_name">
+                                    <li>
+                                        <p class="patern">BOX▶
+                                    </li>
+                                    <li onclick="clickFilter(this)" value="ty96">96 type</li>
+                                    <li onclick="clickFilter(this)" value="ty48">48 type</li>
+                                    <li onclick="clickFilter(this)" value="ty24">24 type</li>
+                                </ul>
+                            </ul>
                         </div>
-                    </nav>
+                    </div>
+                </nav>
+                <p class="message">
+                    ※掲載している3Dモデルはオリジナル制作のポートフォリオ用データであり、既存製品の商業利用を目的としたものではありません。
+                </p>
+                <div class="explanation">
+                    <p>【説明】</p>
+                    <ul>
+                        <li>上記の検索枠から製品を絞りこむことができ、製品の増加に対応します。</li>
+                        <li>「Parts」は下の矢印(<　>)またはドットボタン(・・・)で横方向にスライド可能、<br>
+                                また、製品画像をクリックすると拡大します。
+                        </li>
+                        <li>「3D」は左上のSelectから各パーツごとに閲覧でき、また左下の「<i class="fas fa-expand-arrows-alt"></i>」で拡大することで、より鮮明に見ることができます。
+                        </li>
+                    </ul>
+                </div>
 
-                    <table>
-                        <caption>▼results</caption>
-                        <thead id="tableHead">
+                <table>
+                    <caption>▼results</caption>
+                    <thead id="tableHead">
                         <tr>
                             <th>Product Name</th>
                             <th>Photo</th>
                             <th>Capacity</th>
                             <th>Parts</th>
                             <th>3D</th>
-                            <th class="spetification"><p>Specification</p>
+                            <th class="spetification">
+                                <p>Specification</p>
                             </th>
                         </tr>
-                        </thead>
-                        <!-------------------------- sample01 ----------------------------------->
-                        <tr class="tr_data filter_all filter_BT filter_100 filter_ty24">
-                            <td class="product_name">
-                                <p><span class="name_EX">BT-sample01</span></p>
-                            </td>
-                            <td class="photo">
-                                <div class="scale">
-                                    <img src="image/slider/sample01.png">
-                                    <p><img src="image/scale.png" class="memori"></p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="volume">
-                                    <p>Working Volume</p>
-                                    <p>10.0ml</p>
-                                </div>
-                            </td>
-                            <td class="parts">
-                                <ul class="slider">
-                                    <li>
-                                        <p class="patern_name">parts1</p>
-                                        <div class="slider_photo">
-                                            <img src="image/slider/sample01.png" class="thumnail_item">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="patern_name">parts2</p>
-                                        <div class="slider_photo">
-                                            <img src="image/slider/sample01_bottom.png" class="thumnail_item">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="patern_name">parts3</p>
-                                        <div class="slider_photo">
-                                            <img src="image/slider/rack01.png" class="thumnail_item">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </td>
-                            <td class="model">
-                                <div class="focus_box">
-                                    <p class="select_data">Select</p>
-                                    <select id="pull_model" name="sample01" onchange="selectChange(this)">
-
-                                        <option value="all"> <i class="fas fa-angle-down down"></i>all</option>
-                                        <option value="tube">Tube</option>
-                                    </select>
-                                </div>
-                                <div class="active_data">
-
-                                    <div class="all">
-                                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate
-                                            poster="" src="image/CAD_data/sample01.gltf" ios-src="" ar
-                                            shadow-intensity=0.5 shadow-softness=1.0 exposure="1" camera-target=""
-                                            camera-orbit="" skybox-image="image/skycolor.png" alt="sample01">
-                                            <button onclick="toggleFullscreen(this)" class="fullscreen-button">
-                                                <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                            </button>
-
-                                        </model-viewer>
-                                    </div>
-
-                                </div>
-                            </td>
-                            <td>
-                                <a href="image/spetification/sample01.png" target="_blank"
-                                    class="spetification">
-                                    <p>Specification</p>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <!-------------------------- sample02 ----------------------------------->
-                        <tr class="tr_data filter_all filter_JT filter_40 filter_ty48">
-                            <td class="product_name">
-                                <p><span class="name_EX">JT-sample02</span></p>
-                            </td>
-                            <td class="photo">
-                                <div class="scale">
-                                    <img src="image/slider/sample02.png">
-                                    <p><img src="image/scale.png" class="memori"></p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="volume">
-                                    <p>Working Volume</p>
-                                    <p>4.0ml</p>
-                                </div>
-                            </td>
-                            <td class="parts">
-                                <ul class="slider">
-                                    <li>
-                                        <p class="patern_name">Parts1</p>
-                                        <div class="slider_photo">
-                                            <img src="image/slider/sample02.png" class="thumnail_item">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="patern_name">Parts2</p>
-                                        <div class="slider_photo">
-                                            <img src="image/slider/sample02_bottompng" class="thumnail_item">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="patern_name">Parts3</p>
-                                        <div class="slider_photo">
-                                            <img src="image/slider/rack02.png" class="thumnail_item">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </td>
-                            <td class="model">
-                                <div class="focus_box">
-                                    <p class="select_data">Select</p>
-                                    <select id="pull_model" name="sample02" onchange="selectChange(this)">
-
-                                        <option value="all"> <i class="fas fa-angle-down down"></i>all</option>
-                                        <option value="tube">Tube</option>
-                                    </select>
-                                </div>
-                                <div class="active_data">
-
-                                    <div class="all">
-                                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate
-                                            poster="" src="image/CAD_data/sample02.gltf" ios-src=""
-                                            ar shadow-intensity=0.5 shadow-softness=1.0 exposure="1" camera-target=""
-                                            camera-orbit="" skybox-image="image/skycolor.png" alt="sample02">
-                                            <button onclick="toggleFullscreen(this)" class="fullscreen-button">
-                                                <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                            </button>
-
-                                        </model-viewer>
-                                    </div>
-
-                                </div>
-                            </td>
-                            <td>
-                                <a href="image/spetification/sample02.png" target="_blank"
-                                    class="spetification">
-                                    <p>Specification</p>
-                                </a>
-                            </td>
-                        </tr>
-
-                        <!-------------------------- sample03 ----------------------------------->
-                        <tr class="tr_data filter_all filter_TU filter_20 filter_ty96">
-                            <td class="product_name">
-                                <p><span class="name_EX">TU-sample03</span></p>
-                            </td>
-                            <td class="photo">
-                                <div class="scale">
-                                    <img src="image/slider/sample03.png">
-                                    <p><img src="image/scale.png" class="memori"></p>
-                                </div>
-                            </td>
-                            <td>
-                                <div class="volume">
-                                    <p>Working Volume</p>
-                                    <p>2.0ml</p>
-                                </div>
-                            </td>
-
-                            <td class="parts">
-                                <ul class="slider">
-                                    <li>
-                                        <p class="patern_name">Parts1</p>
-                                        <div class="slider_photo">
-                                            <img src="image/slider/sample03.png"
-                                                class="thumnail_item">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="patern_name">Parts2</p>
-                                        <div class="slider_photo">
-                                            <img src="image/slider/sample03_bottom.png" class="thumnail_item">
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <p class="patern_name">Parts3</p>
-                                        <div class="slider_photo">
-                                            <img src="image/slider/rack01.png" class="thumnail_item">
-                                        </div>
-                                    </li>
-                                </ul>
-                            </td>
-                            <td class="model">
-                                <div class="focus_box">
-                                    <p class="select_data">Select</p>
-                                    <select id="pull_model" name="sample03" onchange="selectChange(this)">
-
-                                        <option value="all"> <i class="fas fa-angle-down down"></i>all</option>
-                                        <option value="tube">Tube</option>
-                                    </select>
-                                </div>
-                                <div class="active_data">
-                                    <div class="all">
-                                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate
-                                            poster="" src="image/CAD_data/sample03.gltf" ios-src=""
-                                            ar shadow-intensity=0.5 shadow-softness=1.0 exposure="1" camera-target=""
-                                            camera-orbit="" skybox-image="image/skycolor.png" alt="sample03">
-                                            <button onclick="toggleFullscreen(this)" class="fullscreen-button">
-                                                <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                            </button>
-
-                                        </model-viewer>
-                                    </div>
-
-                                </div>
-                            </td>
-                            <td>
-                                <a href="image/spetification/sample03.png" target="_blank"
-                                    class="spetification">
-                                    <p>Specification</p>
-                                </a>
-                            </td>
-                        </tr>
-
-
-            <!---------------------------------- @@@3Dmodel_data --------------------------------------------------------->
-            <!-------------------------- sample01 ----------------------------------->
-            <div id="model_data">
-                <div id="sample01">
-                    <div class="all">
-                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="image/CAD_data/sample01.gltf" ios-src="" ar shadow-intensity=0.5
-                            shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="image/skycolor.png" alt="sample01">
-                            <div class="model_btns">
-                                <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
-                                    <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                </button>
+                    </thead>
+                    <!-------------------------- sample01 ----------------------------------->
+                    <tr class="tr_data filter_all filter_BT filter_100 filter_ty24">
+                        <td class="product_name">
+                            <p><span class="name_EX">BT-sample01</span></p>
+                        </td>
+                        <td class="photo">
+                            <div class="scale">
+                                <img src="image/slider/sample01.png">
+                                <p><img src="image/scale.png" class="memori"></p>
                             </div>
-                        </model-viewer>
-                    </div>
-                    <div class="tube">
-                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="image/CAD_data/sample01_tube.gltf" ios-src="" ar shadow-intensity=0.5
-                            shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="image/skycolor.png" alt="sample01">
-                            <div class="model_btns">
-                                <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
-                                    <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                </button>
+                        </td>
+                        <td>
+                            <div class="volume">
+                                <p>Working Volume</p>
+                                <p>10.0ml</p>
                             </div>
-                        </model-viewer>
-                    </div>
-                </div>
+                        </td>
+                        <td class="parts">
+                            <ul class="slider">
+                                <li>
+                                    <p class="patern_name">parts1</p>
+                                    <div class="slider_photo">
+                                        <img src="image/slider/sample01_parts.png" class="thumnail_item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="patern_name">parts2</p>
+                                    <div class="slider_photo">
+                                        <img src="image/slider/sample01_bottom.png" class="thumnail_item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="patern_name">parts3</p>
+                                    <div class="slider_photo">
+                                        <img src="image/slider/rack01.png" class="thumnail_item">
+                                    </div>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="model">
+                            <div class="focus_box">
+                                <p class="select_data">Select</p>
+                                <select id="pull_model" name="sample01" onchange="selectChange(this)">
+
+                                    <option value="all"> <i class="fas fa-angle-down down"></i>all</option>
+                                    <option value="tube">Tube</option>
+                                </select>
+                            </div>
+                            <div class="active_data">
+
+                                <div class="all">
+                                    <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
+                                        src="image/CAD_data/sample01.glb" ios-src="" ar shadow-intensity=0.5
+                                        shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
+                                        skybox-image="image/skycolor.jpg" alt="sample01">
+                                        <button onclick="toggleFullscreen(this)" class="fullscreen-button">
+                                            <i class="fas fa-expand-arrows-alt" id="big"></i>
+                                        </button>
+
+                                    </model-viewer>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <a href="image/spetification/sample01.png" target="_blank" class="spetification">
+                                <p>Specification</p>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <!-------------------------- sample02 ----------------------------------->
+                    <tr class="tr_data filter_all filter_JT filter_40 filter_ty48">
+                        <td class="product_name">
+                            <p><span class="name_EX">JT-sample02</span></p>
+                        </td>
+                        <td class="photo">
+                            <div class="scale">
+                                <img src="image/slider/sample02.png">
+                                <p><img src="image/scale.png" class="memori"></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="volume">
+                                <p>Working Volume</p>
+                                <p>4.0ml</p>
+                            </div>
+                        </td>
+                        <td class="parts">
+                            <ul class="slider">
+                                <li>
+                                    <p class="patern_name">Parts1</p>
+                                    <div class="slider_photo">
+                                        <img src="image/slider/sample02_parts.png" class="thumnail_item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="patern_name">Parts2</p>
+                                    <div class="slider_photo">
+                                        <img src="image/slider/sample02_bottom.png" class="thumnail_item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="patern_name">Parts3</p>
+                                    <div class="slider_photo">
+                                        <img src="image/slider/rack02.png" class="thumnail_item">
+                                    </div>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="model">
+                            <div class="focus_box">
+                                <p class="select_data">Select</p>
+                                <select id="pull_model" name="sample02" onchange="selectChange(this)">
+
+                                    <option value="all"> <i class="fas fa-angle-down down"></i>all</option>
+                                    <option value="tube">Tube</option>
+                                </select>
+                            </div>
+                            <div class="active_data">
+
+                                <div class="all">
+                                    <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
+                                        src="image/CAD_data/sample02.glb" ios-src="" ar shadow-intensity=0.5
+                                        shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
+                                        skybox-image="image/skycolor.jpg" alt="sample02">
+                                        <button onclick="toggleFullscreen(this)" class="fullscreen-button">
+                                            <i class="fas fa-expand-arrows-alt" id="big"></i>
+                                        </button>
+
+                                    </model-viewer>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <a href="image/spetification/sample02.png" target="_blank" class="spetification">
+                                <p>Specification</p>
+                            </a>
+                        </td>
+                    </tr>
+
+                    <!-------------------------- sample03 ----------------------------------->
+                    <tr class="tr_data filter_all filter_TU filter_20 filter_ty96">
+                        <td class="product_name">
+                            <p><span class="name_EX">TU-sample03</span></p>
+                        </td>
+                        <td class="photo">
+                            <div class="scale">
+                                <img src="image/slider/sample03.png">
+                                <p><img src="image/scale.png" class="memori"></p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="volume">
+                                <p>Working Volume</p>
+                                <p>2.0ml</p>
+                            </div>
+                        </td>
+
+                        <td class="parts">
+                            <ul class="slider">
+                                <li>
+                                    <p class="patern_name">Parts1</p>
+                                    <div class="slider_photo">
+                                        <img src="image/slider/sample03_parts.png" class="thumnail_item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="patern_name">Parts2</p>
+                                    <div class="slider_photo">
+                                        <img src="image/slider/sample03_bottom.png" class="thumnail_item">
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="patern_name">Parts3</p>
+                                    <div class="slider_photo">
+                                        <img src="image/slider/rack01.png" class="thumnail_item">
+                                    </div>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="model">
+                            <div class="focus_box">
+                                <p class="select_data">Select</p>
+                                <select id="pull_model" name="sample03" onchange="selectChange(this)">
+
+                                    <option value="all"> <i class="fas fa-angle-down down"></i>all</option>
+                                    <option value="tube">Tube</option>
+                                </select>
+                            </div>
+                            <div class="active_data">
+                                <div class="all">
+                                    <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
+                                        src="image/CAD_data/sample03.glb" ios-src="" ar shadow-intensity=0.5
+                                        shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
+                                        skybox-image="image/skycolor.jpg" alt="sample03">
+                                        <button onclick="toggleFullscreen(this)" class="fullscreen-button">
+                                            <i class="fas fa-expand-arrows-alt" id="big"></i>
+                                        </button>
+
+                                    </model-viewer>
+                                </div>
+
+                            </div>
+                        </td>
+                        <td>
+                            <a href="image/spetification/sample03.png" target="_blank" class="spetification">
+                                <p>Specification</p>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
             </div>
-            <!-------------------------- sample02 ----------------------------------->
-            <div id="model_data">
-                <div id="sample02">
-                    <div class="all">
-                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="image/CAD_data/sample02.gltf" ios-src="" ar shadow-intensity=0.5
-                            shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="image/skycolor.png" alt="sample02">
-                            <div class="model_btns">
-                                <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
-                                    <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                </button>
-                            </div>
-                        </model-viewer>
-                    </div>
-                    <div class="tube">
-                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="image/CAD_data/sample02_tube.gltf" ios-src="" ar shadow-intensity=0.5
-                            shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="image/skycolor.png" alt="sample02">
-                            <div class="model_btns">
-                                <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
-                                    <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                </button>
-                            </div>
-                        </model-viewer>
-                    </div>
+            <div id="page_top"><a href="#"></a></div>
+        </div>
+
+        <!---------------------------------- @@@3Dmodel_data --------------------------------------------------------->
+        <!-------------------------- sample01 ----------------------------------->
+        <div id="model_data">
+            <div id="sample01">
+                <div class="all">
+                    <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
+                        src="image/CAD_data/sample01.glb" ios-src="" ar shadow-intensity=0.5 shadow-softness=1.0
+                        exposure="1" camera-target="" camera-orbit="" skybox-image="image/skycolor.jpg" alt="sample01">
+                        <div class="model_btns">
+                            <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
+                                <i class="fas fa-expand-arrows-alt" id="big"></i>
+                            </button>
+                        </div>
+                    </model-viewer>
                 </div>
-            </div>
-            <!-------------------------- sample03 ----------------------------------->
-            <div id="model_data">
-                <div id="sample03">
-                    <div class="all">
-                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="image/CAD_data/sample03.gltf" ios-src="" ar shadow-intensity=0.5
-                            shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="image/skycolor.png" alt="sample03">
-                            <div class="model_btns">
-                                <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
-                                    <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                </button>
-                            </div>
-                        </model-viewer>
-                    </div>
-                    <div class="tube">
-                        <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
-                            src="image/CAD_data/sample03_tube.gltf" ios-src="" ar
-                            shadow-intensity=0.5 shadow-softness=1.0 exposure="1" camera-target="" camera-orbit=""
-                            skybox-image="image/skycolor.png" alt="sample03">
-                            <div class="model_btns">
-                                <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
-                                    <i class="fas fa-expand-arrows-alt" id="big"></i>
-                                </button>
-                            </div>
-                        </model-viewer>
-                    </div>
+                <div class="tube">
+                    <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
+                        src="image/CAD_data/sample01_tube.glb" ios-src="" ar shadow-intensity=0.5 shadow-softness=1.0
+                        exposure="1" camera-target="" camera-orbit="" skybox-image="image/skycolor.jpg" alt="sample01">
+                        <div class="model_btns">
+                            <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
+                                <i class="fas fa-expand-arrows-alt" id="big"></i>
+                            </button>
+                        </div>
+                    </model-viewer>
                 </div>
             </div>
         </div>
-
-        <!--サムネイル拡大-->
-        <div id="zoom5" class="zoomback">
-            <div id="zoom5_outline">
-                <button id="zoom5_btn">閉じる</button>
-                <p class="zoomimg_box">
-                    <img src="image/slider/sample01.png" id="zoomimg5">
-                </p>
+        <!-------------------------- sample02 ----------------------------------->
+        <div id="model_data">
+            <div id="sample02">
+                <div class="all">
+                    <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
+                        src="image/CAD_data/sample02.glb" ios-src="" ar shadow-intensity=0.5 shadow-softness=1.0
+                        exposure="1" camera-target="" camera-orbit="" skybox-image="image/skycolor.jpg" alt="sample02">
+                        <div class="model_btns">
+                            <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
+                                <i class="fas fa-expand-arrows-alt" id="big"></i>
+                            </button>
+                        </div>
+                    </model-viewer>
+                </div>
+                <div class="tube">
+                    <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
+                        src="image/CAD_data/sample02_tube.glb" ios-src="" ar shadow-intensity=0.5 shadow-softness=1.0
+                        exposure="1" camera-target="" camera-orbit="" skybox-image="image/skycolor.jpg" alt="sample02">
+                        <div class="model_btns">
+                            <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
+                                <i class="fas fa-expand-arrows-alt" id="big"></i>
+                            </button>
+                        </div>
+                    </model-viewer>
+                </div>
             </div>
+        </div>
+        <!-------------------------- sample03 ----------------------------------->
+        <div id="model_data">
+            <div id="sample03">
+                <div class="all">
+                    <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
+                        src="image/CAD_data/sample03.glb" ios-src="" ar shadow-intensity=0.5 shadow-softness=1.0
+                        exposure="1" camera-target="" camera-orbit="" skybox-image="image/skycolor.jpg" alt="sample03">
+                        <div class="model_btns">
+                            <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
+                                <i class="fas fa-expand-arrows-alt" id="big"></i>
+                            </button>
+                        </div>
+                    </model-viewer>
+                </div>
+                <div class="tube">
+                    <model-viewer class="reveal" loading="auto" camera-controls auto-rotate poster=""
+                        src="image/CAD_data/sample03_tube.glb" ios-src="" ar shadow-intensity=0.5 shadow-softness=1.0
+                        exposure="1" camera-target="" camera-orbit="" skybox-image="image/skycolor.jpg" alt="sample03">
+                        <div class="model_btns">
+                            <button onclick="toggleFullscreen(this)" class="fullscreen-button btngroupFR pc">
+                                <i class="fas fa-expand-arrows-alt" id="big"></i>
+                            </button>
+                        </div>
+                    </model-viewer>
+                </div>
+            </div>
+        </div>
+    </div>
 
-            <!-- slider -->
-            <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-                integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-            <script>
-                /*
-                 ************ PartsSlide *********************************************************
-                 */
-                $('.slider').slick({
-                    autoplay: false, //自動的に動き出すか。初期値はfalse。
-                    infinite: true, //スライドをループさせるかどうか。初期値はtrue。
-                    slidesToShow: 1, //スライドを画面に3枚見せる
-                    slidesToScroll: 1, //1回のスクロールで3枚の写真を移動して見せる
-                    prevArrow: '<div class="slick-prev"></div>', //矢印部分PreviewのHTMLを変更
-                    nextArrow: '<div class="slick-next"></div>', //矢印部分NextのHTMLを変更
-                    dots: true, //下部ドットナビゲーションの表示
+    <!--サムネイル拡大-->
+    <div id="zoom5" class="zoomback">
+        <div id="zoom5_outline">
+            <button id="zoom5_btn">閉じる</button>
+            <p class="zoomimg_box">
+                <img src="image/slider/sample01.png" id="zoomimg5">
+            </p>
+        </div>
+
+        <!-- slider -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script>
+            /*
+             ************ PartsSlide *********************************************************
+             */
+            $('.slider').slick({
+                autoplay: false, //自動的に動き出すか。初期値はfalse。
+                infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+                slidesToShow: 1, //スライドを画面に何枚見せるか
+                slidesToScroll: 1, //1回のスクロールで何枚の写真を移動して見せるか
+                prevArrow: '<div class="slick-prev"></div>', //矢印部分PreviewのHTMLを変更
+                nextArrow: '<div class="slick-next"></div>', //矢印部分NextのHTMLを変更
+                dots: true, //下部ドットナビゲーションの表示
+            });
+            /*
+             ************ Slide Photo Zoom *********************************************************
+             */
+            const zoom = document.querySelectorAll(".thumnail_item");
+            const zoomdata = document.querySelectorAll(".slider");
+            const zoomscrol = zoomdata.getElementById;
+            const zoomback = document.getElementById("zoom5");
+            const zoomimg = document.getElementById("zoomimg5");
+
+            zoom.forEach(function (value) {
+                value.addEventListener("click", kakudai);
+            });
+
+            function kakudai(e) {
+                zoomback.style.display = "flex";
+                zoomimg.setAttribute("src", e.target.getAttribute("src"));
+            }
+
+            zoomback.addEventListener("click", modosu);
+
+            function modosu() {
+                zoomback.style.display = "none";
+            }
+        </script>
+
+        <script>
+            $(function () {
+                var pagetop = $('#page_top');
+                pagetop.hide();
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) { //100pxスクロールしたら表示
+                        pagetop.fadeIn();
+                    } else {
+                        pagetop.fadeOut();
+                    }
                 });
-                /*
-                 ************ Slide Photo Zoom *********************************************************
-                 */
-                const zoom = document.querySelectorAll(".thumnail_item");
-                const zoomdata = document.querySelectorAll(".slider");
-                const zoomscrol = zoomdata.getElementById;
-                const zoomback = document.getElementById("zoom5");
-                const zoomimg = document.getElementById("zoomimg5");
-
-                zoom.forEach(function (value) {
-                    value.addEventListener("click", kakudai);
+                pagetop.click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 500); //0.5秒かけてトップへ移動
+                    return false;
                 });
-
-                function kakudai(e) {
-                    zoomback.style.display = "flex";
-                    zoomimg.setAttribute("src", e.target.getAttribute("src"));
-                }
-
-                zoomback.addEventListener("click", modosu);
-
-                function modosu() {
-                    zoomback.style.display = "none";
-                }
-            </script>
-
-            <script>
-                $(function () {
-                    var pagetop = $('#page_top');
-                    pagetop.hide();
-                    $(window).scroll(function () {
-                        if ($(this).scrollTop() > 100) { //100pxスクロールしたら表示
-                            pagetop.fadeIn();
-                        } else {
-                            pagetop.fadeOut();
-                        }
-                    });
-                    pagetop.click(function () {
-                        $('body,html').animate({
-                            scrollTop: 0
-                        }, 500); //0.5秒かけてトップへ移動
-                        return false;
-                    });
-                });
-            </script>
-            <script>
-                window.onbeforeunload = function () {
-                    navigator.sendBeacon('/logout.php');
-                };
-            </script>
-
-
-
-            <script src="index.js"></script>
-
+            });
+        </script>
+        <script src="index.js"></script>
+    </div>
 </body>
-
 </html>
