@@ -19,15 +19,13 @@ body {
   width: 100%;
   height: 100%;
 }
-main{
+
+
+.all_block {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-.all_block {
-  position: relative;
-  padding: 5% 10% 10%;
+  padding: 10px 10px 50px;
 }
 
 /*トップへ戻る*/
@@ -82,57 +80,9 @@ main{
   margin: auto;
   text-align: center;
 }
-.logo{
-  cursor: pointer;
-}
 
-.logo img{
-   width: 250px;
-   padding: 20px;
-   position: relative;
-   top: 0;
-   left: 0;
-}
-.setting{
-  position: relative;
-  left: 90%;
-  max-width: 10%;
-}
-.logout{
-  width: 100px;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  padding: 3px 5px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  white-space: nowrap;
-}
-.logout a{
-  color: #0c3702;
-}
-.logouticon{
-  margin: 0 5px;
-}
-.account{
-  border: 2px solid #0c3702;
-  border-radius: 5px;
-  background: #0c3702;
-  max-width: 150px;
-  width: auto;
-  padding: 3px 10px;
-}
-.account:hover{
-  border: 2px solid #d5d5d5;
-  background: #962d2d;
-}
-.account a{
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-.usericon{
-  margin: 0 5px;
+#menu{
+    width: 100%;
 }
 .menu_box {
   list-style: none;
@@ -170,13 +120,6 @@ main{
   color: rgb(229, 226, 143);
 }
 
-#menu .EX {
-  color: rgb(27, 162, 208);
-}
-
-#menu .IN {
-  color: rgb(221, 65, 190);
-}
 #menu .all{
   background: #a80505;
   color: #fff;
@@ -190,7 +133,6 @@ main{
   color: #fff;
   font-size: 1.2rem;
   background: rgba(0, 0, 0, 0.3);
-  width: 65%;
   background-color: rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(147deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 74%);
 }
@@ -198,7 +140,6 @@ main{
   border: 10px double rgba(255, 255, 255);
   border-radius: 5px;
   margin-bottom: 10px;
-  width: 65%;
   background-color: rgba(0, 0, 0, 0.2);
   padding: 5px;
 }
@@ -230,6 +171,32 @@ button {
 
 }
 
+.message{
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+    color: #02268b;
+    font-weight: 600;
+}
+
+.explanation{
+    margin: 20px 0;
+}
+.explanation p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.explanation ul{
+    list-style: none;
+}
+
+.explanation li::before{
+    position: relative;
+    content: "●";
+    color: #000;
+    font-size:0.8rem;
+}
+
+
 table {
   position: relative;
   border: 1px solid #000;
@@ -256,6 +223,7 @@ th {
 td {
   height: 250px;
   width: 500px;
+  padding: 5px;
 }
 td.freezebox{
   background: rgba(24, 85, 2, 0.1);
@@ -271,13 +239,16 @@ td.freezebox{
   margin: 0 auto;
 }
 
+.select_data{
+    padding: 0 0 3px 5px;
+}
 .select_data::after{
   content: '\f0a7';
   font-family: Font Awesome\ 5 Free;
   padding: 5px;
 }
 .model {
-  padding: 0;
+  padding: 0 5px;
 }
 
 img {
@@ -285,32 +256,11 @@ img {
   width: auto;
 }
 
-td.EX{
-  background:rgba(184, 221, 251, 0.2);
-}
-td.IN{
-  background:rgba(224, 198, 234, 0.2);
-}
-
-.txtEX{
-  font-style: italic;
-  text-align: center;
-  color: rgba(26, 80, 187, 0.5);
-}
-.txtIN{
-  font-style: italic;
-  text-align: center;
-  color: rgba(160, 100, 174, 0.5);
-}
-.txtBOX{
-  font-style: italic;
-  text-align: center;
-  color: rgba(44, 108, 52, 0.5);
-}
 .photo{
   width: 300px;
 }
 .scale {
+  position: relative;
   display: flex;
   padding: 0;
   flex-wrap: nowrap;
@@ -377,7 +327,6 @@ model-viewer{
   position: relative;
   display: flex;
   align-items: center;
-  height: 250px;
   width: 200px;
 }
 
@@ -393,43 +342,31 @@ model-viewer{
 }
 
 
-/*矢印の設定*/
-
-/*戻る、次へ矢印の位置*/
 .slick-prev,
 .slick-next {
   position: absolute;
-  /*絶対配置にする*/
   bottom: 0;
   cursor: pointer;
-  /*マウスカーソルを指マークに*/
   outline: none;
-  /*クリックをしたら出てくる枠線を消す*/
   border-top: 2px solid #666;
-  /*矢印の色*/
   border-right: 2px solid #666;
-  /*矢印の色*/
   height: 15px;
   width: 15px;
 }
 
 .slick-prev {
-  /*戻る矢印の位置と形状*/
   left: -1.5%;
   transform: rotate(-135deg);
 }
 
 .slick-next {
-  /*次へ矢印の位置と形状*/
   right: -1.5%;
   transform: rotate(45deg);
 }
 
-/*ドットナビゲーションの設定*/
-
 .slick-dots {
   text-align: center;
-  margin: 20px 0 0 0;
+  margin: 10px 5px;
 }
 
 .slick-dots li {
@@ -441,22 +378,17 @@ model-viewer{
   color: transparent;
   outline: none;
   width: 8px;
-  /*ドットボタンのサイズ*/
   height: 8px;
-  /*ドットボタンのサイズ*/
   display: block;
   border-radius: 50%;
   background: #ccc;
-  /*ドットボタンの色*/
 }
 
 .slick-dots .slick-active button {
   background: #333;
-  /*ドットボタンの現在地表示の色*/
 }
 
 /* photo zoom */
-
 #zoom5 {
   display: none;
 }
@@ -506,10 +438,10 @@ model-viewer{
 }
 
 /*プルダウンメニュー*/
-
 #pull_model {
   cursor: pointer;
-  padding: 0 20px;
+  padding: 2px 5px;
+  min-width: 100px;
   text-align: center;
   border: solid 2px #ccc;
   text-align: center;
@@ -523,26 +455,26 @@ model-viewer{
 #model_data {
   display: none;
 }
-@media screen and(min-width: 767px){
+@media screen and (min-width: 767px){
   .product_name{
     font-size: 1.1rem;
   }
   img{
     height: 75%;
   }
-  th, td{
-    padding: 0;
-  }
+
   td{
     width: 300px;
   }
-  model-viewer{
-    width: 0;
-    height: 250px;
 
-  }
+  .all_block {
+  padding: 20px 50px 50px;
 }
-@media screen and(min-width: 1200px){
+#menu{
+    width: 65%;
+}
+}
+@media screen and (min-width: 1200px){
   .search_box{
     width: 100%;
   }
